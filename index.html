@@ -1,0 +1,61 @@
+
+ 
+<html>
+  <head>
+    <title>Image recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+
+  <body>
+    <!--Combine all the components and change the text color of span tags for object and accuracy  -->
+    
+    
+    <h3 class="heading">IMAGE RECOGNITION</h3>
+    <p >Model is trained to identify these objects: <span class="btn ">rubics cube</span> <span class="btn">scale</span> <span class="btn">sparsh</span> 
+
+   
+  <div class="container">
+   
+   <div class="row">
+        <div class="col-md-6">
+            <label> Live webcam Preview  </label>
+            <div id="camera"></div>
+            <br>
+            <button onclick="take_snapshot();" >Capture Image</button>
+        </div>
+        <div class="col-md-6">
+            <label>Your snap  </label>
+            <div id="result"></div>
+            <br>
+            <button onclick="check();" id="check">Identify Image</button>
+        </div>
+   </div>
+   <div>
+    <br>
+   
+    
+    <p >Object : <span id="result_object_name"></span> </p>
+    <p >Accuracy : <span id="result_object_accuracy"></span> </p>
+   </div>
+
+  </div>
+      <h2 style="color:red;">HINTS - </h2>
+<ul>
+    <li>We had set yellow color to result_object_name and result_object_accuracy but now that we have changed the color yellow color won't look good on the webpage</li>
+    <li>So lets change the color of these 2 span tag using id to some color that matches our latest color scheme and looks good on the webpage</li>
+</ul>
+<script src="main.js"></script>
+
+  <script async src="https://drv.tw/inc/wd.js"></script></body>
+</html>
+
+ 
